@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WordWise - Coming Soon</title>
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+        <!-- Font Awesome (For social media icons) -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet">
+        <!-- Font Awesome (For envelope, bell icons) -->
+        <script src="https://kit.fontawesome.com/b7dd8d176d.js" crossorigin="anonymous"></script>
+        <!-- favicon.io  Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+    </head>
+    <body>
+        <!-- Nav bar on scroll -->
+        <nav class="sticky-nav">
+            <div class="nav-logo">
+                <span style="font-size: 30px; color: #00BFAE;">
+                    <i class="fa-solid fa-w"></i>
+                </span>
+                <span class="nav-logo-text">
+                    ordW
+                    <i class="fa-solid fa-book-open-reader fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i>
+                    se
+                </span>
+            </div>
+            <button class="nav-btn" onclick="openModal()">
+                <i class="fa-solid fa-bell"></i> Notify Me
+            </button>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero scroll-reaveal">
+            <div class="hero-content">
+                <div class="logo">
+                    <div class="fa-2x">
+                        <span style="font-size: 50px; color: #00BFAE;">
+                            <i class="fa-solid fa-w fa-flip"></i>
+                        </span>
+                        <span class="logo-text">
+                            ordW
+                            <i class="fa-solid fa-book-open-reader fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;"></i>
+                            se
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-heading">
+                    <h2><span class="accent-letter">L</span>earn <span class="accent-letter1">E</span>nglish<br>
+                        <span class="line-indent2"></span><span class="accent-letter2">S</span>marter
+                    </h2>
+                </div>
+                <p>WordWise is launching soon – sign up to be the first to know.</p>
+                <button class="cta-btn" onclick="openModal()"><i class="fa-solid fa-bell fa-shake"></i> Notify Me</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/vector_illustration_3.png" alt="Learn smarter">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about scroll-reaveal">
+            <div class="about-content">                
+                <div class="about-overlay">
+                    <div class="about-text glass-wide-card">
+                        <h2>About WordWise</h2>
+                        <p>
+                            WordWise is an upcoming web and mobile app that helps learners improve their English
+                            vocabulary through daily challenges, flashcards, quizzes, and real-life usage examples. Designed for all
+                            levels, from beginners to advanced.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-collage">
+                    <img src="assets/images/martin-adams-unsplash.jpg" alt="Library" class="collage-img img1"/>
+                    <img src="assets/images/tim-mossholder-unsplash.jpg" alt="Love to learn" class="collage-img img2"/>
+                    <img src="assets/images/vector_illustration_1.png" alt="Learn smarter" class="collage-img img3"/>
+                    <img src="assets/images/rut-miit-unsplash.jpg" alt="Graduation cap" class="collage-img img4"/>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form (Modal) -->
+        <div id="modal-notify" class="modal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeModal()">×</button>
+                <h3>Stay Tuned</h3>
+                <form id="notify-form" action="php/mail.php" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message (Optional)"></textarea>
+                    <button type="submit">
+                        <i class="fa-solid fa-envelope fa-bounce" style="--fa-bounce-land-scale-x: 1.2;--fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i> 
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media Section -->
+        <section class="social-media scroll-reaveal">
+            <div>
+                <h4>Follow us on:</h4> 
+                <a href="https://web.facebook.com/EnglishLearningHubOfficial" 
+                    class="social-icon" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/gateway.english.community" 
+                    class="social-icon" target="_blank" rel="noopener" aria-label="Visit our Instagram page">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/gateway-english-community" 
+                    class="social-icon" target="_blank" rel="noopener" aria-label="Visit our Linkedin page">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <p>
+                    Designed with <i class="fa-solid fa-heart fa-beat" style="color: #ff6b6b;"></i>
+                        by <a href="http://www.gatewaycommunity.net/" target="_blank" rel="noopener" aria-label="Visit our website">
+                        Gateway English Community
+                    </a>
+                </p>
+                <small>&copy; 2024 WordWise. All rights reserved.</small>
+            </div>
+            <div>
+                
+                <h5>Attributes</h5>
+                <small>
+                    Photo by <a href="https://unsplash.com/@martinadams?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martin Adams</a> on <a href="https://unsplash.com/photos/assorted-title-book-lot-on-shelf-_OZCl4XcpRw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </small>
+                <small>
+                    Photo by <a href="https://unsplash.com/@rutmiit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">RUT MIIT</a> on <a href="https://unsplash.com/photos/person-holding-black-academic-hat-oTglG1D4hRA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </small>
+                <small>
+                    Photo by <a href="https://unsplash.com/@timmossholder?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tim Mossholder</a> on <a href="https://unsplash.com/photos/love-to-learn-pencil-signage-on-wall-near-walking-man-WE_Kv_ZB1l0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </small>
+            </div>
+        </section>
+       
+        <script src="js/script.js"></script>
+    </body>
+</html>
