@@ -125,7 +125,7 @@ a {
     backdrop-filter: blur(10.5px);
     border: .5px solid rgba(10, 38, 71, 0.27);
     z-index: 2;
-    padding: 120px 10px 10px;
+    padding: 100px 10px 10px;
     box-sizing: border-box;
 }
 .hero-heading {
@@ -481,7 +481,7 @@ a {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .hero {
-    height: 85vh;
+    height: 90vh;
   }
   .hero-heading {
     line-height: .8;
