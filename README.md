@@ -16,3 +16,7 @@ Welcome to the WordWise Landing Page submission for the Web Developer Internship
 - Functional newsletter form with PHP email handler
 
 ---
+## Live View
+[https://coding-doves.github.io/wordwise-landing/](https://coding-doves.github.io/wordwise-landing/)
+
+---
